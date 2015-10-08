@@ -1,0 +1,35 @@
+{
+  "name": "base",
+  "version": "0.0.0",
+  "description": "basic express / angular project in typescript",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "jspm init && jspm install && tsd install",
+    "build": "tsc --watch",
+    "backend": "node backend/main",
+    "frontend": "browser-sync start --proxy=127.0.0.1:3333 --files='frontend/**'",
+    "clean": "rm -rf backend/*.js backend/*.map frontend/app/*.js frontend/app/*.map shared/*.js shared/*.map",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jspm": "^0.16.11"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.9.10",
+    "tsd": "^0.6.5",
+    "typescript": "^1.6.2"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "frontend",
+      "packages": "frontend/lib"
+    },
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.4.7"
+    },
+    "devDependencies": {}
+  }
+}
