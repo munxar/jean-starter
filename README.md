@@ -1,7 +1,7 @@
 # jean-starter
 jspm express angular node starter project
 
-## clone repo ans install dependencies
+## install dependencies
     npm i
 
 ## (1) build and watch

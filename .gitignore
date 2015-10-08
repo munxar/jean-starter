@@ -32,4 +32,6 @@ backend/**/*.js
 backend/**/*.map
 frontend/app/**/*.js
 frontend/app/**/*.map
+shared/**/*.js
+shared/**/*.map
 .idea/
